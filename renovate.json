@@ -55,7 +55,8 @@
        "fileMatch": ["^ci/.*$"],
        "matchStrings": ["KIND_NODE_IMAGE_VERSION:-\"(?<currentValue>.*?)\"}"],
        "depNameTemplate": "kindest/node",
-       "datasourceTemplate": "docker"
+       "datasourceTemplate": "docker",
+       "commitMessageTopic": "kindest/node"
      }
    ],
    "assignees": [ 
