@@ -44,8 +44,31 @@
       "matchStrings": ["CRICTL_VERSION:-\"(?<currentValue>v.*?)\"}"],
       "depNameTemplate": "kubernetes-sigs/cri-tools",
       "datasourceTemplate": "github-tags"
-    }
-  ],
-  "assignees": ["kashifest", "fmuyassarov","furkatgofurov7", "Xenwar", "smoshiur1237", "macaptain", "jan-est", "namnx228"],
-  "assigneesSampleSize": 2
+    },
+  {
+       "fileMatch": ["^ci/.*$"],
+       "matchStrings": ["KUBERNETES_VERSION:-\"(?<currentValue>.*?)\"}"],
+       "depNameTemplate": "kubernetes/kubernetes",
+       "datasourceTemplate": "github-releases"
+     },
+     {
+       "fileMatch": ["^ci/.*$"],
+       "matchStrings": ["KIND_NODE_IMAGE_VERSION:-\"(?<currentValue>.*?)\"}"],
+       "depNameTemplate": "kindest/node",
+       "datasourceTemplate": "docker"
+     }
+   ],
+   "assignees": [ 
+     "jan-est",
+     "lentzi90",
+     "macaptain",
+     "mboukhalfa",
+     "namnx228",
+     "Rozzii",
+     "smoshiur1237",
+     "Sunnatillo",
+     "wgslr",
+     "Xenwar"
+   ],
+   "assigneesSampleSize": 2
 }
